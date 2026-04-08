@@ -94,7 +94,8 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             position: relative;
             border-radius: 100em;
-            background-color: #6366f1; /* theme primary */
+            background-color: #6366f1;
+            /* theme primary */
             box-shadow:
                 -0.15em -0.15em 0.15em -0.075em #8b5cf6,
                 0.0375em 0.0375em 0.0675em 0 rgba(0, 0, 0, 0.15);
@@ -263,11 +264,11 @@
             box-shadow: inset 15px -4px 0px 15px #ffcf48;
         }
 
-        .switch input:checked + .slider {
+        .switch input:checked+.slider {
             background-color: #2a2a2a;
         }
 
-        .switch input:checked + .slider:before {
+        .switch input:checked+.slider:before {
             transform: translateX(1.8em);
             box-shadow: inset 8px -4px 0px 0px #fff;
         }
@@ -282,11 +283,22 @@
             opacity: 0;
         }
 
-        .star_1 { left: 1em; top: 0.5em; }
-        .star_2 { left: 1.2em; top: 1.2em; }
-        .star_3 { left: 0.6em; top: 1em; }
+        .star_1 {
+            left: 1em;
+            top: 0.5em;
+        }
 
-        .switch input:checked + .slider .star {
+        .star_2 {
+            left: 1.2em;
+            top: 1.2em;
+        }
+
+        .star_3 {
+            left: 0.6em;
+            top: 1em;
+        }
+
+        .switch input:checked+.slider .star {
             opacity: 1;
         }
 
@@ -299,7 +311,7 @@
             transition: all 0.4s;
         }
 
-        .switch input:checked + .slider .cloud {
+        .switch input:checked+.slider .cloud {
             opacity: 0;
         }
     </style>
@@ -307,7 +319,8 @@
 
 <body class="bg-light text-dark dark:bg-slate-900 dark:text-white transition-colors duration-300">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg border-b border-gray-200/50 dark:border-slate-800/50 z-50 transition-colors">
+    <nav
+        class="fixed w-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg border-b border-gray-200/50 dark:border-slate-800/50 z-50 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
@@ -331,7 +344,9 @@
                                 <div class="star star_2"></div>
                                 <div class="star star_3"></div>
                                 <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-                                    <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path>
+                                    <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff"
+                                        d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925">
+                                    </path>
                                 </svg>
                             </span>
                         </label>
@@ -346,7 +361,9 @@
                                 <div class="star star_2"></div>
                                 <div class="star star_3"></div>
                                 <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-                                    <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path>
+                                    <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff"
+                                        d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925">
+                                    </path>
                                 </svg>
                             </span>
                         </label>
@@ -427,7 +444,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section ----->
     <section id="about" class="py-20 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -692,7 +709,8 @@
                                 class="w-full px-4 py-3 border border-gray-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
                         </div>
                         <div class="w-full flex justify-center">
-                            <button type="submit" class="button w-full" style="display: block; width: 100%; max-width: 100%;">
+                            <button type="submit" class="button w-full"
+                                style="display: block; width: 100%; max-width: 100%;">
                                 <div class="button-outer">
                                     <div class="button-inner pb-3 pt-3" style="text-align: center;">
                                         <span class="w-full block text-lg">Send Message</span>
@@ -795,13 +813,13 @@
             if (isDark) {
                 document.documentElement.classList.add('dark');
                 localStorage.setItem('color-theme', 'dark');
-                if(themeToggleChk) themeToggleChk.checked = true;
-                if(themeToggleMobileChk) themeToggleMobileChk.checked = true;
+                if (themeToggleChk) themeToggleChk.checked = true;
+                if (themeToggleMobileChk) themeToggleMobileChk.checked = true;
             } else {
                 document.documentElement.classList.remove('dark');
                 localStorage.setItem('color-theme', 'light');
-                if(themeToggleChk) themeToggleChk.checked = false;
-                if(themeToggleMobileChk) themeToggleMobileChk.checked = false;
+                if (themeToggleChk) themeToggleChk.checked = false;
+                if (themeToggleMobileChk) themeToggleMobileChk.checked = false;
             }
         }
 
