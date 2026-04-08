@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/sujalportfilo/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/sujalportfilo/index.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/sujalportfilo/index.html?serverWindowId=ce08c38e-06fb-4195-a38f-bddd1ca8c914",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/sujalportfilo/index.html?serverWindowId=ce08c38e-06fb-4195-a38f-bddd1ca8c914"
+        }
+    ]
+}
